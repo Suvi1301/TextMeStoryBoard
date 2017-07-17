@@ -8,23 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		151A4B1E1F1D0A9E00AD824F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A4B1D1F1D0A9E00AD824F /* AppDelegate.swift */; };
-		151A4B201F1D0A9E00AD824F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A4B1F1F1D0A9E00AD824F /* ViewController.swift */; };
+		151A4B201F1D0A9E00AD824F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A4B1F1F1D0A9E00AD824F /* LoginViewController.swift */; };
 		151A4B231F1D0A9E00AD824F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151A4B211F1D0A9E00AD824F /* Main.storyboard */; };
 		151A4B251F1D0A9E00AD824F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151A4B241F1D0A9E00AD824F /* Assets.xcassets */; };
 		151A4B281F1D0A9E00AD824F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151A4B261F1D0A9E00AD824F /* LaunchScreen.storyboard */; };
 		151A4B301F1D0B9200AD824F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 151A4B2F1F1D0B9200AD824F /* GoogleService-Info.plist */; };
+		151A4B351F1D1CED00AD824F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A4B341F1D1CED00AD824F /* RegisterViewController.swift */; };
 		B57A8030E08326BE0667E672 /* Pods_TextMeStoryBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0C577AAE406A67F07A2134 /* Pods_TextMeStoryBoard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		151A4B1A1F1D0A9E00AD824F /* TextMeStoryBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextMeStoryBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		151A4B1D1F1D0A9E00AD824F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		151A4B1F1F1D0A9E00AD824F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		151A4B1F1F1D0A9E00AD824F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		151A4B221F1D0A9E00AD824F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		151A4B241F1D0A9E00AD824F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		151A4B271F1D0A9E00AD824F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		151A4B291F1D0A9E00AD824F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		151A4B2F1F1D0B9200AD824F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		151A4B341F1D1CED00AD824F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5C0C577AAE406A67F07A2134 /* Pods_TextMeStoryBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextMeStoryBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08C986A49FBB68F7D162898 /* Pods-TextMeStoryBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextMeStoryBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextMeStoryBoard/Pods-TextMeStoryBoard.release.xcconfig"; sourceTree = "<group>"; };
 		A72CD41D64DAFA12067812CC /* Pods-TextMeStoryBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextMeStoryBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextMeStoryBoard/Pods-TextMeStoryBoard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,8 +65,10 @@
 		151A4B1C1F1D0A9E00AD824F /* TextMeStoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				151A4B331F1D15FA00AD824F /* Controller */,
+				151A4B321F1D15F400AD824F /* View */,
+				151A4B311F1D15F000AD824F /* Model */,
 				151A4B1D1F1D0A9E00AD824F /* AppDelegate.swift */,
-				151A4B1F1F1D0A9E00AD824F /* ViewController.swift */,
 				151A4B211F1D0A9E00AD824F /* Main.storyboard */,
 				151A4B241F1D0A9E00AD824F /* Assets.xcassets */,
 				151A4B261F1D0A9E00AD824F /* LaunchScreen.storyboard */,
@@ -72,6 +76,29 @@
 				151A4B2F1F1D0B9200AD824F /* GoogleService-Info.plist */,
 			);
 			path = TextMeStoryBoard;
+			sourceTree = "<group>";
+		};
+		151A4B311F1D15F000AD824F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		151A4B321F1D15F400AD824F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		151A4B331F1D15FA00AD824F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				151A4B1F1F1D0A9E00AD824F /* LoginViewController.swift */,
+				151A4B341F1D1CED00AD824F /* RegisterViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		8C7968268E99A608A4595C6B /* Pods */ = {
@@ -216,7 +243,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				151A4B201F1D0A9E00AD824F /* ViewController.swift in Sources */,
+				151A4B351F1D1CED00AD824F /* RegisterViewController.swift in Sources */,
+				151A4B201F1D0A9E00AD824F /* LoginViewController.swift in Sources */,
 				151A4B1E1F1D0A9E00AD824F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +413,7 @@
 				151A4B2E1F1D0A9E00AD824F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

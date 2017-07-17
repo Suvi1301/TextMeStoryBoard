@@ -6,6 +6,10 @@ target 'TextMeStoryBoard' do
   use_frameworks!
 
   # Pods for TextMeStoryBoard
-pod 'Firebase/Core'
 
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
+pod ‘SwiftKeychainWrapper'
 end
