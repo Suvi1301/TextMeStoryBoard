@@ -12,7 +12,7 @@ import FirebaseDatabase
 import FirebaseStorage
 import SwiftKeychainWrapper
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
 	@IBOutlet weak var imgProfilePic: UIImageView!
 	@IBOutlet	weak var txtUsername: UITextField!
@@ -35,7 +35,7 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
 
 			imgPicker = UIImagePickerController()
-			imgPicker.delegate = self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
+			imgPicker.delegate = self
 			
 			imgPicker.allowsEditing = true
     }
