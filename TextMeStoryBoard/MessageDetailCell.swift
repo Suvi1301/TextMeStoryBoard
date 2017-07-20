@@ -49,12 +49,13 @@ class MessageDetailCell: UITableViewCell {
 			let username = data["username"]
 			
 			let userImg = data["userImage"]
+		 
 			
 			self.recipientName.text = username as? String
 			
-			let ref = FIRStorage.storage().reference(forURL: user as! String)
+			let ref = FIRStorage.storage().reference(forURL: userImg as! String)
 			
-			ref.data(withMaxSize: 10000, completion: {(data, error)
+			ref.data(withMaxSize: 10000, completion: {(data, error) in
 				
 				if error != nil {
 					

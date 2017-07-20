@@ -100,6 +100,9 @@
                                             <constraint firstAttribute="width" constant="85" id="2V4-f9-bEw"/>
                                         </constraints>
                                         <state key="normal" title="Log out"/>
+                                        <connections>
+                                            <action selector="signOut:" destination="Lli-xF-iZc" eventType="touchUpInside" id="IF5-fA-1pk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -156,6 +159,9 @@
                                                 <constraint firstItem="g9Q-g6-nph" firstAttribute="top" secondItem="LKR-dg-vAW" secondAttribute="topMargin" id="Vai-4S-g4b"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="scn-ww-Ctv" kind="show" identifier="toMessages" id="Sdc-EY-UxG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -171,10 +177,31 @@
                             <constraint firstItem="ZbJ-4W-j8G" firstAttribute="top" secondItem="7nC-Tz-62Z" secondAttribute="bottom" id="vE4-g1-OEA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="ZbJ-4W-j8G" id="1gP-X3-ezt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ar0-JS-4gf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="144.80000000000001" y="-191.1544227886057"/>
+        </scene>
+        <!--Message View Controller-->
+        <scene sceneID="Et1-uH-qaH">
+            <objects>
+                <viewController id="scn-ww-Ctv" customClass="MessageViewController" customModule="TextMeStoryBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Csa-A9-hE3"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Ty-gg-GFz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mq5-VH-W4a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFL-bf-m6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930" y="-181"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="oVm-4e-Vh5">

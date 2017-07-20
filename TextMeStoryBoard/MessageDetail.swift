@@ -45,7 +45,7 @@ class MessageDetail {
 		
 		_messageKey = messageKey
 		
-		if let recipient = postData["recipient"] as? String {
+		if let recipient = messageData["recipient"] as? String {
 			
 			_recipient = recipient
 		}
