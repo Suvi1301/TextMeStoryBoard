@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
 	override func viewDidAppear(_ animated: Bool) {
 		
 		if let _ = KeychainWrapper.standard.string(forKey: "uid")	{
-			
+			 
 			self.performSegue(withIdentifier: "toMessages", sender: nil)
 		}
 	}
